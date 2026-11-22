@@ -3,7 +3,7 @@
 Battery-powered vacuum pump on a Nidec 12V BLDC motor: manual speed control,
 3S Li-Ion pack, compact DIY build.
 
-**Status:** v1 prototype — assembled and running. v2 (buck converter) planned.
+**Status:** Status: v0.1 — assembled, verified, video attached. Next: v2 (INA3221 + ESP32).
 
 ## Demo
 
@@ -26,7 +26,7 @@ v2 will switch to a buck converter.
 ## Wiring
 
 1. Battery (+/−) → `VIN` and common `GND` of the PQ30RV21.
-2. `VOUT` → 1N4007 diode → 470 µF capacitor → pump (+).
+2. `VOUT` → 1N5822 diode → 470 µF capacitor → pump (+).
 3. Voltage divider on `VADJ` sets the 5.6–11.5V range
    (R1 = <!-- значение -->, R2 = <!-- значение -->).
 4. Pump tacho (yellow wire) → 10k pull-up → controller / measurement input.
