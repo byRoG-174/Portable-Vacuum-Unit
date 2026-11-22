@@ -1,35 +1,64 @@
-# Portable Vacuum Unit (Nidec + 3S + PQ30RV21)
+# Portable Vacuum Unit
 
-**Status:** Prototype (Work in Progress / Alpha)  
-**Goal:** Autonomous power supply for a vacuum pump from a Li-Ion battery with speed control.
+Battery-powered vacuum pump on a Nidec 12V BLDC motor: manual speed control,
+3S Li-Ion pack, compact DIY build.
 
-## About the project
+**Status:** v1 prototype — assembled and running. v2 (buck converter) planned.
 
-A prototype assembly combining a Nidec 12V 0.6A pump with a 3S Li-Ion power bank using an LDO **PQ30RV21** as a clean, reliable voltage stabilizer. 
-
-## Hardware & Schematic
-
-* **Pump:** Nidec 12V 0.6A (BLDC, 4-wire) with Tacho monitoring and voltage speed control (`Vadj`).
-* **Power:** 3S Li-Ion (3x18650) + 20A BMS.
-* **Regulation & Cooling:** Sharp PQ30RV21 paired with a custom aluminum heatsink (>50 sq.cm) and thermal paste.
+## Demo
 
 https://github.com/user-attachments/assets/faaa4c4b-80e8-4265-8f0d-c4ae3ed239fa
 
-1. **Battery (+/-)** → Connect to `VIN` and common `GND` of PQ30RV21.
-2. **Output Stage:** `VOUT` → Power diode (`1N4007`) → `470uF` Capacitor → Nidec Pump (+).
-3. **Control & Tacho:** Voltage divider on `VADJ` (`5.6V – 11.5V` range) and Nidec yellow wire via `10k` pull-up to Tacho.
+## What it is
 
-## Known Issues & Quick Start
+A self-contained unit that runs a Nidec 12V 0.6A BLDC vacuum pump from a
+3S Li-Ion battery (3×18650, 20A BMS). Pump speed is set with a potentiometer;
+the tacho output lets you verify the pump is spinning. v1 uses a Sharp
+PQ30RV21 LDO as the regulator — simple, but inefficient (see Known Issues).
+v2 will switch to a buck converter.
 
-* **Thermal/Efficiency:** The LDO heats up under load and drains the 3S battery quickly; heatsink monitoring is mandatory.
-* **Operation:** Connect the battery, adjust the potentiometer (starts reliably above ~6.5V), and keep an eye on temperature.
+## Quick start
 
-## TODO (Version 2.0)
+1. Connect the 3S battery to `VIN` / `GND`.
+2. Turn the potentiometer up: the pump starts reliably above ~6.5V on `VADJ`.
+3. Keep an eye on the heatsink — there is no thermal protection on board.
 
-- [ ] Replace PQ30RV21 with a DC-DC Buck converter for higher efficiency.
-- [ ] Design a proper enclosure.
-- [ ] Add a battery charge indicator.
+## Wiring
 
----
+1. Battery (+/−) → `VIN` and common `GND` of the PQ30RV21.
+2. `VOUT` → 1N4007 diode → 470 µF capacitor → pump (+).
+3. Voltage divider on `VADJ` sets the 5.6–11.5V range
+   (R1 = <!-- значение -->, R2 = <!-- значение -->).
+4. Pump tacho (yellow wire) → 10k pull-up → controller / measurement input.
 
-**Disclaimer:** Use at your own risk. No hardware overheat protection included.
+![Schematic](hardware/schematic.png)
+<!-- если картинки пока нет — удали эту строку целиком -->
+
+## Measured performance
+
+<!-- заполни замерами, пока пусто — так честнее, чем выдуманные цифры: -->
+- Max vacuum: <!-- kPa -->
+- Runtime on a full charge: <!-- min -->
+- Heatsink temperature under load: <!-- °C -->
+
+Полная версия BOM и проект KiCad — в репозитории:
+- [KiCad project](hardware/) — schematic and PCB files
+- [BOM (CSV)](hardware/bom.csv)
+- [Datasheets](docs/) — pump and regulator PDFs
+
+## Known issues (v1)
+
+- The LDO burns the surplus voltage as heat: the pack drains fast and the
+  heatsink gets hot. Monitoring is mandatory.
+- No thermal protection, no low-battery cutoff.
+
+## Roadmap (v2)
+
+- [ ] Replace the LDO with a buck converter (efficiency).
+- [ ] Enclosure (3D-printed).
+- [ ] Battery gauge.
+
+## License
+
+Distributed under the CERN-OHL-S. See `LICENSE` for details.
+<!-- поправь, если выберешь другую лицензию -->
