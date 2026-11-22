@@ -33,10 +33,10 @@ v2 will switch to a buck converter.
 
 ## Measured performance
 
-<!-- заполни замерами, пока пусто — так честнее, чем выдуманные цифры: -->
-- Max vacuum: <!-- kPa -->
-- Runtime on a full charge: <!-- min -->
-- Heatsink temperature under load: <!-- °C -->
+- Max vacuum: -97.5kPa;
+- Runtime on a full charge: 
+  9V = n/d;
+  12V = n/d.
 
 Полная версия BOM и проект KiCad — в репозитории:
 - [KiCad project](schematic/) — schematic and PCB files
