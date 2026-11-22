@@ -3,7 +3,7 @@
 Battery-powered vacuum pump on a Nidec 12V BLDC motor: manual speed control,
 3S Li-Ion pack, compact DIY build.
 
-**Status:** Status: v0.1 — assembled, verified, video attached. Next: v2 (INA3221 + ESP32).
+**Status:** Status: v0.1 — assembled, verified, video attached. Next: v2 (INA3221 + ESP32 + ip2366).
 
 ## Demo
 
@@ -54,6 +54,9 @@ v2 will switch to a buck converter.
 - [ ] Replace the LDO with a buck converter (efficiency).
 - [ ] Enclosure (3D-printed).
 - [ ] Battery gauge.
+- [ ] v0.1 — analog prototype, verified.
+- [ ] v2 — INA3221 + ESP32 + ip2366 (battery monitoring, control).
+
 
 ## License
 
