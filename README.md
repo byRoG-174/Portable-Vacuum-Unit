@@ -31,9 +31,6 @@ v2 will switch to a buck converter.
    (R1 = <!-- значение -->, R2 = <!-- значение -->).
 4. Pump tacho (yellow wire) → 10k pull-up → controller / measurement input.
 
-![Schematic](hardware/schematic.png)
-<!-- если картинки пока нет — удали эту строку целиком -->
-
 ## Measured performance
 
 <!-- заполни замерами, пока пусто — так честнее, чем выдуманные цифры: -->
@@ -42,9 +39,9 @@ v2 will switch to a buck converter.
 - Heatsink temperature under load: <!-- °C -->
 
 Полная версия BOM и проект KiCad — в репозитории:
-- [KiCad project](hardware/) — schematic and PCB files
-- [BOM (CSV)](hardware/bom.csv)
-- [Datasheets](docs/) — pump and regulator PDFs
+- [KiCad project](schematic/) — schematic and PCB files
+- [BOM (CSV)](schematic/Portable_Vacuum_Unit.csv)
+- [Datasheets](datascheet/) — pump and regulator PDFs
 
 ## Known issues (v1)
 
@@ -60,5 +57,4 @@ v2 will switch to a buck converter.
 
 ## License
 
-Distributed under the CERN-OHL-S. See `LICENSE` for details.
-<!-- поправь, если выберешь другую лицензию -->
+Distributed under the MIT. See `LICENSE` for details.
