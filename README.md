@@ -34,9 +34,9 @@ v2 will switch to a buck converter.
 ## Measured performance
 
 - Max vacuum: -97.5kPa;
-- Runtime: 
-  3S(18650) 9V = n/d;
-  3S(18650) 12V = n/d.
+- Runtime  3S(18650): 
+  9V = n/d;
+  12V = n/d.
 
 Полная версия BOM и проект KiCad — в репозитории:
 - [KiCad project](schematic/) — schematic and PCB files
