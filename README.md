@@ -11,14 +11,12 @@ A prototype assembly combining a Nidec 12V 0.6A pump with a 3S Li-Ion power bank
 
 * **Pump:** Nidec 12V 0.6A (BLDC, 4-wire) with Tacho monitoring and voltage speed control (`Vadj`).
 * **Power:** 3S Li-Ion (3x18650) + 20A BMS.
-* **Regulation & Cooling:** Sharp PQ30RV21 paired with a custom aluminum heatsink (>80 sq.cm) and thermal paste.
+* **Regulation & Cooling:** Sharp PQ30RV21 paired with a custom aluminum heatsink (>50 sq.cm) and thermal paste.
 
-<p align="center">
-  <img src="schematic/working.mp4" width="600" alt="Portable Vacuum Unit Prototype">
-</p>
+https://github.com
 
 1. **Battery (+/-)** → Connect to `VIN` and common `GND` of PQ30RV21.
-2. **Output Stage:** `VOUT` → Power diode (`1N5819`) → `470uF` Capacitor → Nidec Pump (+).
+2. **Output Stage:** `VOUT` → Power diode (`1N4007`) → `470uF` Capacitor → Nidec Pump (+).
 3. **Control & Tacho:** Voltage divider on `VADJ` (`5.6V – 11.5V` range) and Nidec yellow wire via `10k` pull-up to Tacho.
 
 ## Known Issues & Quick Start
