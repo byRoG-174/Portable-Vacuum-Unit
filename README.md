@@ -55,7 +55,7 @@ v2 will switch to a buck converter.
 - [ ] Enclosure (3D-printed).
 - [ ] Battery gauge.
 - [ ] v0.1 — analog prototype, verified.
-- [ ] v2 — INA3221 + ESP32 + ip2366 (battery monitoring, control, tacho).
+- [ ] v2 — IP2366 (charging), INA3221 (monitoring), ESP32 (control).
 
 
 ## License
