@@ -13,7 +13,8 @@ A prototype assembly combining a Nidec 12V 0.6A pump with a 3S Li-Ion power bank
 * **Power:** 3S Li-Ion (3x18650) + 20A BMS.
 * **Regulation & Cooling:** Sharp PQ30RV21 paired with a custom aluminum heatsink (>50 sq.cm) and thermal paste.
 
-https://github.com/schematic/
+<video src="schematic/Working.mp4" controls="controls" style="max-width: 730px;">
+</video>
 
 1. **Battery (+/-)** → Connect to `VIN` and common `GND` of PQ30RV21.
 2. **Output Stage:** `VOUT` → Power diode (`1N4007`) → `470uF` Capacitor → Nidec Pump (+).
