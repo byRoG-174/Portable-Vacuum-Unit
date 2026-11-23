@@ -57,7 +57,7 @@ v2 will switch to a buck converter.
 - [ ] Replace the LDO with a buck converter (efficiency).
 - [ ] Enclosure (3D-printed).
 - [ ] Battery gauge.
-- [ ] v2 — IP2366 (charging), INA3221 (monitoring), ESP32 (control:timer, power, up-time, IPSLed, WI-FI, etc.).
+- [ ] v2 — IP2366 (charging), INA3221 (monitoring), ESP32 (control:timer, monitoring power, loss time, up-time, IPSLed Display, WI-FI, etc.).
 
 
 ## License
