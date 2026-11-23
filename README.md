@@ -11,10 +11,10 @@ https://github.com/user-attachments/assets/faaa4c4b-80e8-4265-8f0d-c4ae3ed239fa
 
 ## What it is
 
-A self-contained unit that runs a Nidec 12V 0.6A BLDC vacuum pump from a
+A self-contained unit that runs a [Nidec (12V/0.6A) BLDC vacuum pump](datasheet/nidec_00h623n090_en.pdf) from a
 3S Li-Ion battery (3×18650, 20A BMS). Pump speed is set with a potentiometer;
-the tacho output lets you verify the pump is spinning. v1 uses a Sharp
-PQ30RV21 LDO as the regulator — simple, but inefficient (see Known Issues).
+the [tacho](datasheet/BLDC_FG_Tachometer_Manual_EN.pdf) output lets you verify the pump is spinning. v0.1 uses a 
+[Sharp PQ30RV21](datasheet/Low_Power-Loss_Voltage_Regulators_PQ30RV1PQ30RV11PQ30RV2PQ30RV21.pdf) LDO as the regulator — simple, but inefficient (see Known Issues).
 v2 will switch to a buck converter.
 
 ## Quick start
