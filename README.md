@@ -35,7 +35,9 @@ v2 will switch to a buck converter.
 
 ## Measured performance
 
-- Max vacuum: -97.5kPa;
+- Max vacuum, kPa: -97.5;
+- Nominal (DC=12V), prm/min = 66;
+- Minimal (DC=12V), rpm/min = 44;
 - Runtime  3S(18650): 
   9V = n/d;
   12V = n/d.
