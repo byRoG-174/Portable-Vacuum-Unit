@@ -45,7 +45,7 @@ v2 will switch to a buck converter.
 Полная версия BOM и проект KiCad — в репозитории:
 - [KiCad project](schematic/) — schematic and PCB files
 - [BOM (CSV)](schematic/Portable_Vacuum_Unit.csv)
-- [Datasheets](datascheet/) — pump and regulator PDFs
+- [Datasheets](datasheet/) — pump and regulator PDFs
 
 ## Known issues (v1)
 
