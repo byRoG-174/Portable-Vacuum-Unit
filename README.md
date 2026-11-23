@@ -31,6 +31,8 @@ v2 will switch to a buck converter.
    (R1 = <!-- значение -->, R2 = <!-- значение -->).
 4. Pump tacho (yellow wire) → 10k pull-up → controller / measurement input.
 
+schematic/Schematic.png
+
 ## Measured performance
 
 - Max vacuum: -97.5kPa;
