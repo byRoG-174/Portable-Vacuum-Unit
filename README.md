@@ -32,7 +32,7 @@ v2 will switch to a buck converter.
 4. Pump tacho (yellow wire) → 10k pull-up → controller / measurement input.
 
 [schematic/Schematic.png
-](https://github.com/byRoG-174/Portable-Vacuum-Unit/blob/fb9a8f1fffd5569c09dc96819c8dbce3cbe5ff59/schematic/Schematic.png)
+] https://github.com/byRoG-174/Portable-Vacuum-Unit/blob/fb9a8f1fffd5569c09dc96819c8dbce3cbe5ff59/schematic/Schematic.png
 
 ## Measured performance
 
