@@ -53,11 +53,11 @@ v2 will switch to a buck converter.
 
 ## Roadmap (v2)
 
+- [ ] v0.1 — analog prototype, verified.
 - [ ] Replace the LDO with a buck converter (efficiency).
 - [ ] Enclosure (3D-printed).
 - [ ] Battery gauge.
-- [ ] v0.1 — analog prototype, verified.
-- [ ] v2 — IP2366 (charging), INA3221 (monitoring), ESP32 (control).
+- [ ] v2 — IP2366 (charging), INA3221 (monitoring), ESP32 (control:timer, power, up-time, IPSLed, WI-FI, etc.).
 
 
 ## License
