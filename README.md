@@ -21,14 +21,13 @@ v2 will switch to a buck converter.
 
 1. Connect the 3S battery to `VIN` / `GND`.
 2. Turn the potentiometer up: the pump starts reliably above ~6.5V on `VADJ`.
-3. Keep an eye on the heatsink — there is no thermal protection on board.
 
 ## Wiring
 
 1. Battery (+/−) → `VIN` and common `GND` of the PQ30RV21.
 2. `VOUT` → 1N5822 diode → 470 µF capacitor → pump (+).
 3. Voltage divider on `VADJ` sets the 5.6–11.5V range
-   (R1 = <!-- значение -->, R2 = <!-- значение -->).
+   (R1 = 1kOhm, R2 = 3,5kOhm).
 4. Pump tacho (yellow wire) → 10k pull-up → controller / measurement input.
 
 ![Schematic](schematic/Schematic.png)
